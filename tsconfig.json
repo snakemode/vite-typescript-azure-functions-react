@@ -20,5 +20,8 @@
   },
   "include": [
     "./app/src"
+  ],
+  "types": [
+    "vitest/globals"
   ]
 }

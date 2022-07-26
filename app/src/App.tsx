@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+export default function App() {
     const [apiData, setApiData] = useState({});
 
     useEffect(() => {
@@ -15,7 +15,7 @@ function App() {
 
     return (
         <div className="App">
-            <header className="App-header">
+            <header role="header" className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>Hello Vite + React!</p>
                 <p>
@@ -28,5 +28,3 @@ function App() {
         </div>
     )
 }
-
-export default App

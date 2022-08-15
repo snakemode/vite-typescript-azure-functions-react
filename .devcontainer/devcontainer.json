@@ -1,5 +1,5 @@
 {
-  "name": "Snowpack and Azure Functions",
+  "name": "Vite and Azure Functions",
   "runArgs": ["--init"],
   "build": {
     "dockerfile": "Dockerfile",
@@ -14,7 +14,7 @@
   "portsAttributes": {
     "8080": {
       "label": "Website",
-      "onAutoForward": "ignore"
+      "onAutoForward": "openBrowserOnce"
     },
     "7071": {
       "label": "API",
@@ -22,7 +22,7 @@
     }
   },
   "settings": {},
-  "extensions": ["ms-azuretools.vscode-azurefunctions", "ms-azuretools.vscode-azurestaticwebapps", "dbaeumer.vscode-eslint"],
-  "postCreateCommand": "npm run init",
+  "extensions": ["ms-azuretools.vscode-azurefunctions", "ms-azuretools.vscode-azurestaticwebapps"],
+  "postCreateCommand": "npm install",
   "remoteUser": "node"
 }
